@@ -531,7 +531,7 @@ html.nav-menu-open {
 
 .ticket-main {
   padding: 48px 56px 56px;
-  padding-right: min(280px, 42%);
+  padding-right: min(340px, 46%);
   min-width: 0;
 }
 
@@ -541,28 +541,30 @@ html.nav-menu-open {
 
 .ticket-badge {
   position: absolute;
-  top: 28px;
-  right: 28px;
+  top: 22px;
+  right: 22px;
   z-index: 2;
-  width: min(148px, 34vw);
+  width: min(210px, 42vw);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  padding: 16px 14px 14px;
+  gap: 10px;
+  padding: 22px 18px 18px;
   background: var(--page);
-  border: 1px solid var(--rule);
-  box-shadow: 0 10px 24px -18px rgba(40, 34, 28, 0.45);
+  border: 2px solid var(--wine);
+  box-shadow:
+    0 16px 36px -16px rgba(40, 34, 28, 0.4),
+    0 0 0 6px rgba(107, 39, 55, 0.06);
   text-align: center;
-  transform: rotate(3deg);
+  transform: rotate(2.5deg);
 }
 
 .ticket-badge-pulse {
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: var(--wine);
-  box-shadow: 0 0 0 0 rgba(107, 39, 55, 0.4);
+  box-shadow: 0 0 0 0 rgba(107, 39, 55, 0.45);
   animation: stub-pulse 2s ease-out infinite;
 }
 
@@ -583,9 +585,10 @@ html.nav-menu-open {
 
 .ticket-badge-status {
   margin: 0;
-  font-size: 0.65rem;
+  font-size: 0.82rem;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
+  font-weight: 500;
   color: var(--wine);
 }
 
@@ -594,30 +597,32 @@ html.nav-menu-open {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: 4px;
   line-height: 1;
 }
 
 .ticket-badge-num {
-  font-size: 2rem;
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-size: 3.35rem;
+  font-weight: 600;
   color: var(--ink);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  line-height: 0.9;
 }
 
 .ticket-badge-unit {
-  font-size: 0.68rem;
+  font-size: 0.86rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   color: var(--ink-soft);
 }
 
 .ticket-badge-bar {
   width: 100%;
-  height: 5px;
+  height: 8px;
   background: var(--rule);
   position: relative;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .ticket-badge-bar span {
@@ -630,8 +635,8 @@ html.nav-menu-open {
 
 .ticket-badge-sub {
   margin: 0;
-  font-size: 0.65rem;
-  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-soft);
 }
@@ -674,6 +679,11 @@ html.nav-menu-open {
   line-height: 1.12;
   max-width: 15ch;
   margin-bottom: 22px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  font-weight: 500;
 }
 
 .hero p.lede {
@@ -757,10 +767,10 @@ html.nav-menu-open {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    gap: 10px 14px;
-    padding: 14px 16px;
+    gap: 12px 16px;
+    padding: 18px 18px;
     text-align: left;
-    box-shadow: none;
+    box-shadow: 0 12px 28px -18px rgba(40, 34, 28, 0.35);
   }
 
   .ticket-badge-pulse {
@@ -769,26 +779,33 @@ html.nav-menu-open {
 
   .ticket-badge-status {
     margin-right: auto;
+    font-size: 0.78rem;
   }
 
   .ticket-badge-open {
     flex-direction: row;
     align-items: baseline;
-    gap: 6px;
+    gap: 8px;
   }
 
   .ticket-badge-num {
-    font-size: 1.45rem;
+    font-size: 2.4rem;
+  }
+
+  .ticket-badge-unit {
+    font-size: 0.8rem;
   }
 
   .ticket-badge-bar {
     flex: 1 1 100%;
     max-width: none;
+    height: 7px;
     margin-top: 0;
   }
 
   .ticket-badge-sub {
     width: 100%;
+    font-size: 0.74rem;
   }
 
   .hero h1 {
