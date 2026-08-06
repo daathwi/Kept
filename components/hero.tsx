@@ -37,11 +37,7 @@ export function Hero() {
               Ticket No. {hero.ticketNo} , {hero.status}
             </span>
           </div>
-          <h1>
-            {hero.title.before}
-            <em>{hero.title.emphasis}</em>
-            {hero.title.after}
-          </h1>
+          <h1>{hero.title}</h1>
           <p className="lede">{hero.lede}</p>
           <div className="hero-actions">
             <a

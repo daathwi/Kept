@@ -18,11 +18,7 @@ export type NavIconId = (typeof nav.links)[number]["icon"] | typeof nav.ctaIcon;
 export const hero = {
   ticketNo: "0014",
   status: "Open for new orders",
-  title: {
-    before: "Your ",
-    emphasis: "brand deserves a website",
-    after: " that's kept, not just built.",
-  },
+  title: "Your brand deserves a website that's kept, not just built.",
   lede: "I design, launch, and personally look after websites strictly with only 30 craftspeople who obsess over their brand & process without agency hand-offs.",
   cta: "Book Your Ticket",
   note: "First build free for the right business , ask me how.",
